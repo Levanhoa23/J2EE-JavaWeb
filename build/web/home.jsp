@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <title>Hoa-Sports</title>
     <link rel="icon" href="./assets/img/logo.png" type="image/png" />
-    <!-- Các liên kết đến tệp CSS -->
+ 
     <link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
@@ -99,76 +99,7 @@
         <!-- categories section ends -->
 
         <!-- review section stars -->
-        <section class="review" id="review">
-            <h1 class="heading">customer's <span>review</span></h1>
-            <div class="swiper review-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide box">
-                        <img src="./assets/img/comment1.jpg" />
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sequi
-                            adipisci delectus sint
-                        </p>
-                        <h3>john deo></h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide box">
-                        <img src="./assets/img/comment1.jpg" />
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sequi
-                            adipisci delectus sint
-                        </p>
-                        <h3>john deo></h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide box">
-                        <img src="./assets/img/comment1.jpg" />
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sequi
-                            adipisci delectus sint
-                        </p>
-                        <h3>john deo></h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide box">
-                        <img src="./assets/img/comment1.jpg" />
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sequi
-                            adipisci delectus sint
-                        </p>
-                        <h3>john deo></h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+     
         <!-- review section ends -->
 
         <!-- blogs section start -->
@@ -183,7 +114,7 @@
                             <a href="#"><i class="fas fa-calendar"></i> 1st May, 2021</a>
                         </div>
                         <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                        <a href="#" class="btn">read more</a>
+                        <a href="#" class="btn" >read more</a>
                     </div>
                 </div>
 

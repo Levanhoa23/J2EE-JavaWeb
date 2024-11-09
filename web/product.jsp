@@ -83,7 +83,7 @@
                         <h3>${product.name}</h3>
                         <li>upto 45% off</li>
                         <li>$${product.price}0</li>
-                        <a href="#" class="btn">shop now</a>
+                        <a href="ShopServlet" class="btn">shop now</a>
 
                     </div>
                 </c:forEach>

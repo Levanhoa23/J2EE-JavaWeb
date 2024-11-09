@@ -18,35 +18,45 @@ public class LoginServlet extends BaseServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
-        request.getRequestDispatcher("login.jsp").include(request, response);
-    }
-
-   
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
         HttpSession session = request.getSession();
-        
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-        UserDao userDao = DatabaseDao.getInstance().getUserDao();
-        User user = userDao.find(email,password);
-        
-        if(user == null){
-            session.setAttribute("error", "Login that bai");
-            response.sendRedirect("LoginSerlvet");
-            
-        }else{
-            session.setAttribute("user", user);
-            if(user.getRole().equals("admin")){
-                response.sendRedirect("DashBoardServlet");
-                
-            }else{
-                response.sendRedirect("HomeServlet");
-            }
+        if (session.getAttribute("user") != null) {
+            response.sendRedirect("HomeServlet");
+
+        } else {
+            request.getRequestDispatcher("login.jsp").include(request, response);
+
         }
     }
+@Override
+protected void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    HttpSession session = request.getSession();
 
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+    UserDao userDao = DatabaseDao.getInstance().getUserDao();
+
+    // Kiểm tra xem tài khoản tồn tại
+    User user = userDao.find(email);
+    if (user == null) {
+        // Nếu không tìm thấy tài khoản
+        session.setAttribute("error", "Tài khoản không tồn tại.");
+        response.sendRedirect("LoginServlet");
+    } else if (!user.getPassword().equals(password)) {
+        // Nếu sai mật khẩu
+        session.setAttribute("error", "Sai mật khẩu.");
+        response.sendRedirect("LoginServlet");
+    } else {
+        // Nếu đăng nhập thành công
+        session.setAttribute("user", user);
+        session.removeAttribute("error"); // Xóa lỗi nếu có
+        if ("admin".equals(user.getRole())) {
+            response.sendRedirect("DashBoardServlet");
+        } else {
+            response.sendRedirect("HomeServlet");
+        }
+    }
 }
 
+
+}

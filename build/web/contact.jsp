@@ -64,22 +64,23 @@
 <!-- features section ends -->
    
     <!-- products section starts -->
-    <div class="Contact-content">
-                      <h1>Liên Hệ với Hoa-Sports</h1>
-                      <p>Chúng tôi là một cộng đồng thể thao sôi động, cam kết mang đến những trải nghiệm thể thao tốt nhất cho mọi người. Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi!</p>
-                      
-                      <h2>Thông Tin Liên Hệ</h2>
-                      <ul>
-                          <li>Email: info@hoa-sports.com</li>
-                          <li>Điện thoại: +84 123 456 789</li>
-                          <li>Địa chỉ: 123 Đường Thể Thao, Quận 1, TP.HCM</li>
-                      </ul>
-              
-                      <h2>Map</h2>
-                      <div class="map-container">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13850.942969083217!2d107.57867104154101!3d16.452860427733143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13c016776c9%3A0xf8964b1f3477d7fe!2sPhu%20Xuan%20University!5e1!3m2!1sen!2s!4v1729791271302!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                  </div>
+  <div class="Contact-content">
+    <h1>Contact Hoa-Sports</h1>
+    <p>We are a vibrant sports community committed to providing the best sports experiences for everyone. If you have any questions, please contact us!</p>
+    
+    <h2>Contact Information</h2>
+    <ul>
+        <li>Email: info@hoa-sports.com</li>
+        <li>Phone: +84 123 456 789</li>
+        <li>Address: 123 Sports Street, District 1, Ho Chi Minh City</li>
+    </ul>
+
+    <h2>Map</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13850.942969083217!2d107.57867104154101!3d16.452860427733143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13c016776c9%3A0xf8964b1f3477d7fe!2sPhu%20Xuan%20University!5e1!3m2!1sen!2s!4v1729791271302!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
     <!-- products section ends -->
 
     <!-- footer section starts -->

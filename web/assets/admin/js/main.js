@@ -59,6 +59,11 @@
     });
 
 
+    // Chart Global Color
+    Chart.defaults.color = "#6C7293";
+    Chart.defaults.borderColor = "#000000";
+
+
     // Worldwide Sales Chart
     var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
     var myChart1 = new Chart(ctx1, {
@@ -68,9 +73,8 @@
             datasets: [{
                     label: "Order",
                     data,
-                    backgroundColor: "rgba(0, 156, 255, .7)"
+                    backgroundColor: "rgba(235, 22, 22, .7)"
                 }
-                
             ]
             },
         options: {
@@ -88,13 +92,7 @@
             datasets: [{
                     label: "Salse",
                     data,
-                    backgroundColor: "rgba(0, 156, 255, .5)",
-                    fill: true
-                },
-                {
-                    label: "Revenue",
-                    data: [99, 135, 170, 130, 190, 180, 270],
-                    backgroundColor: "rgba(0, 156, 255, .3)",
+                    backgroundColor: "rgba(235, 22, 22, .7)",
                     fill: true
                 }
             ]
@@ -115,7 +113,7 @@
             datasets: [{
                 label: "Salse",
                 fill: false,
-                backgroundColor: "rgba(0, 156, 255, .3)",
+                backgroundColor: "rgba(235, 22, 22, .7)",
                 data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]
             }]
         },
@@ -133,11 +131,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(0, 156, 255, .7)",
-                    "rgba(0, 156, 255, .6)",
-                    "rgba(0, 156, 255, .5)",
-                    "rgba(0, 156, 255, .4)",
-                    "rgba(0, 156, 255, .3)"
+                    "rgba(235, 22, 22, .7)",
+                    "rgba(235, 22, 22, .6)",
+                    "rgba(235, 22, 22, .5)",
+                    "rgba(235, 22, 22, .4)",
+                    "rgba(235, 22, 22, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -156,11 +154,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(0, 156, 255, .7)",
-                    "rgba(0, 156, 255, .6)",
-                    "rgba(0, 156, 255, .5)",
-                    "rgba(0, 156, 255, .4)",
-                    "rgba(0, 156, 255, .3)"
+                    "rgba(235, 22, 22, .7)",
+                    "rgba(235, 22, 22, .6)",
+                    "rgba(235, 22, 22, .5)",
+                    "rgba(235, 22, 22, .4)",
+                    "rgba(235, 22, 22, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -179,11 +177,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(0, 156, 255, .7)",
-                    "rgba(0, 156, 255, .6)",
-                    "rgba(0, 156, 255, .5)",
-                    "rgba(0, 156, 255, .4)",
-                    "rgba(0, 156, 255, .3)"
+                    "rgba(235, 22, 22, .7)",
+                    "rgba(235, 22, 22, .6)",
+                    "rgba(235, 22, 22, .5)",
+                    "rgba(235, 22, 22, .4)",
+                    "rgba(235, 22, 22, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]

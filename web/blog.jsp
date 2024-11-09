@@ -32,41 +32,42 @@
 
    
     <!-- Blogs -->
-    <div class="content1">
-                      <h3>Chào mừng đến với <span>Hoa-Sports Blog</span></h3>
-                      <p>
-                        Khám phá thế giới giày thể thao và thời trang đường phố với những mẹo hay và xu hướng mới nhất.
-                      </p>
-                  
-                      <div class="blog-list">
-                        <div class="blog-item">
-                          <img src="./assets/img/qc4.webp" alt="Giày chạy bộ">
-                          <h3>Cách chọn giày chạy bộ phù hợp</h3>
-                          <p>
-                            Chọn giày chạy bộ không chỉ về kiểu dáng mà còn cần phù hợp với bàn chân và thói quen chạy của bạn.
-                          </p>              
-                          <a href="#"class="btn">Read More</a>
-                        </div>
-                  
-                        <div class="blog-item">
-                          <img src="./assets/img/qc5.webp" alt="Giày bóng đá">
-                          <h3>Top 5 mẫu giày bóng đá ưa chuộng 2024</h3>
-                          <p>
-                            Giới thiệu những đôi giày bóng đá mới nhất được yêu thích trong năm nay.
-                          </p>
-                          <a href="#"class="btn" >Read More</a>
-                        </div>
-                  
-                        <div class="blog-item">
-                          <img src="./assets/img/qc6.jpg" alt="Thời trang bền vững">
-                          <h3>Thời trang bền vững: Xu hướng mới</h3>
-                          <p>
-                            Những đôi giày thân thiện với môi trường đang dần trở thành xu hướng trong thời trang thể thao.
-                          </p>
-                          <a href="#"class="btn">Read More</a>
-                        </div>
-                      </div>
-                    </div>
+ <div class="content1">
+    <h3>Welcome to <span>Hoa-Sports Blog</span></h3>
+    <p>
+        Explore the world of sports shoes and trendy fashion with the latest tips and trends.
+    </p>
+
+    <div class="blog-list">
+        <div class="blog-item">
+            <img src="./assets/img/qc4.webp" alt="Running shoes">
+            <h3>How to Choose the Right Running Shoes</h3>
+            <p>
+                Choosing running shoes is not just about style; you also need to consider what fits your feet and your running habits.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="blog-item">
+            <img src="./assets/img/qc5.webp" alt="Soccer shoes">
+            <h3>Top 5 Popular Soccer Shoes of 2024</h3>
+            <p>
+                Introducing the latest soccer shoe models that are trending this year.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="blog-item">
+            <img src="./assets/img/qc6.jpg" alt="Sustainable fashion">
+            <h3>Sustainable Fashion: The New Trend</h3>
+            <p>
+                Eco-friendly shoes are becoming a trend in sports fashion.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</div>
+
                   
 
  <!-- features section starts -->

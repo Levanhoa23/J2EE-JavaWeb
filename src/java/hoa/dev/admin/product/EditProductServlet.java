@@ -16,6 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+
 public class EditProductServlet extends BaseAdminServlet {
 
     @Override
@@ -29,8 +30,6 @@ public class EditProductServlet extends BaseAdminServlet {
         List<Category> categoryList = categoryDao.finAll();
 
         request.setAttribute("categoryList", categoryList);
-
-
         request.setAttribute("product", product);
         request.getRequestDispatcher("admin/product/edit.jsp").include(request, response);
     }
@@ -38,15 +37,24 @@ public class EditProductServlet extends BaseAdminServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String name = request.getParameter("name");
+        String description = request.getParameter("description");
+        String thumbnail = request.getParameter("thumbnail");
+        double price = Double.parseDouble(request.getParameter("price"));
+        int categoryId = Integer.parseInt(request.getParameter("categoryId"));
+        int quantity = Integer.parseInt(request.getParameter("quantity"));
+        
         int productId = Integer.parseInt(request.getParameter("productId"));
         ProductDao productDao = DatabaseDao.getInstance().getProductDao();
         Product product = productDao.find(productId);
 
-        String name = request.getParameter("name");
-        String description = request.getParameter("description");
-
         product.setName(name);
         product.setDescription(description);
+        product.setThumbnail(thumbnail);
+        product.setPrice(price);
+        product.setQuantity(quantity);
+        product.setCategoryId(categoryId);
+        
         productDao.update(product);
         response.sendRedirect("IndexProductServlet");
 

@@ -9,7 +9,7 @@
     <link rel="icon" href="./assets/img/logo.png" type="image/png" />
     <!-- Các liên kết đến tệp CSS -->
     <link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
@@ -25,7 +25,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisincing elit. Aliquam
                     libero nostrum veniam facere tepore nisi.
                 </p>
-                <a href="" class="btn">${keyword}</a>
+
             </div>
 
 
@@ -71,28 +71,26 @@
 
         <!-- products section starts -->
 
+        <form action="CategoryServlet" class="filter" method="get" style="width: 500px;gap: 10px; padding-left: 136px; display: flex;">
+            <input type="hidden" name="categoryId" value="${category.id}"/>
+            <strong>Sort by:</strong>
+            <select name="property" class="form-control property" >
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="createAt">Time</option>
+            </select>
+
+            <strong>Order by:</strong>
+            <select name="order" class="form-control order">
+                <option value="asc">A-Z</option>
+                <option value="desc">Z-A</option>
+            </select>
+
+            <button type="submit" class="filter-submit btn btn-primary" >Filter</button>
+        </form>
+
         <section class="categories" id="categories">
             <h1 class="heading">Hot <span>Product</span></h1>
-            <section id="product1" class="section-p1">
-                <div class="row">
-                    <form action="CategoryServlet" class="filter" method="get" style=" padding-bottom: 30px; margin-left: 320px; font-size: 2rem;">
-                        <input type="hidden" name="categoryId" value="${category.id}"/>
-                        <strong>Sort by:</strong>
-                        <select name="property" class="form-control property" >
-                            <option value="name">Name</option>
-                            <option value="price">Price</option>
-                            <option value="createAt">Time</option>
-                        </select>
-
-                        <strong>Order by:</strong>
-                        <select name="order" class="form-control order">
-                            <option value="asc">A-Z</option>
-                            <option value="desc">Z-A</option>
-                        </select>
-
-                        <button type="submit" class="filter-submit btn btn-primary" >Filter</button>
-                    </form>
-                </div></section>
 
             <div class="box-container">
                 <c:forEach items="${productList}" var ="product">
@@ -106,6 +104,7 @@
                 </c:forEach>
             </div>
         </section>
+
 
 
         <!-- products section ends -->
@@ -127,8 +126,7 @@
         <!-- categories section ends -->
         <!-- footer section starts -->
         <%@include file="./inc/footer.jsp" %>
-        <!-- footer section ends -->
-        <!-- Liên kết đến tệp JavaScript -->
+
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script src="./assets/javascript/script.js"></script>
     </body>

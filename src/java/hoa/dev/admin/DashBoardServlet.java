@@ -4,7 +4,6 @@
  */
 package hoa.dev.admin;
 
-import hoa.dev.BaseServlet;
 import hoa.dev.data.dao.DatabaseDao;
 import hoa.dev.data.dao.OrderDao;
 import hoa.dev.data.model.Order;
@@ -18,7 +17,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DashBoardServlet extends BaseServlet {
+public class DashBoardServlet extends BaseAdminServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -52,7 +51,7 @@ public class DashBoardServlet extends BaseServlet {
         request.setAttribute("orderByDateList", orderByDateList);
         request.setAttribute("orderPendingList", orderPendingList);
 
-        request.getRequestDispatcher("admin/dashboard.jsp").include(request, response);
+        request.getRequestDispatcher("admin/dashboardd.jsp").include(request, response);
     }
 
     @Override

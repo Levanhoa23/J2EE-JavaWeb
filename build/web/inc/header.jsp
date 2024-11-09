@@ -29,7 +29,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="CartServlet"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <a href="CartServlet"><div class="fas fa-shopping-cart" id="cart-btn" style="color: black"></div></a>
         <div class="btn-group">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <c:if test ="${sessionScope.user == null}">

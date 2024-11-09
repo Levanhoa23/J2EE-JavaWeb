@@ -129,7 +129,9 @@ public class ProductImpl implements ProductDao {
     @Override
     public List<Product> hot(int limit) {
         List<Product> prodList = new ArrayList<>();
-        String sql = "SELECT * FROM products ORDER BY VIEW DESC LIMIT ?";
+        //String sql = "SELECT * FROM products ORDER BY VIEW DESC LIMIT ?";
+            String sql = "SELECT * FROM products WHERE category_id = 1 ORDER BY VIEW DESC LIMIT ?";
+
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setInt(1, limit);
@@ -260,13 +262,25 @@ public class ProductImpl implements ProductDao {
     @Override
     public List<Product> filter(int categoryId, String propertyName, String order) {
         List<Product> prodList = new ArrayList<>();
-        String sql = "SELECT * FROM PRODUCTS WHERE category_id = ? ORDER BY ? ?" ;
+        // Xác định cột sắp xếp (propertyName) và thứ tự sắp xếp (order)
+        String orderBy = "name"; // mặc định sắp xếp theo tên
+        String sortOrder = "ASC"; // mặc định là tăng dần
+
+        // Kiểm tra tính hợp lệ của `propertyName` và `order`
+        if ("price".equalsIgnoreCase(propertyName) || "createAt".equalsIgnoreCase(propertyName)) {
+            orderBy = propertyName;
+        }
+        if ("desc".equalsIgnoreCase(order)) {
+            sortOrder = "DESC";
+        }
+
+        // Xây dựng câu SQL với `ORDER BY`
+        String sql = "SELECT * FROM PRODUCTS WHERE category_id = ? ORDER BY " + orderBy + " " + sortOrder;
+
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
-            stmt.setInt(1, categoryId);
-            stmt.setString(2,propertyName);
-            stmt.setString(3,order);
-            
+            stmt.setInt(1, categoryId);  // Đặt tham số cho categoryId
+
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("id");
@@ -285,33 +299,33 @@ public class ProductImpl implements ProductDao {
         return prodList;
     }
 
-        @Override
-        public List<Product> getProducts(int from, int amount) {
-            List<Product> prodList = new ArrayList<>();
-            String sql = "SELECT * FROM PRODUCTS LIMIT ?, ?";
-            try {
-                PreparedStatement stmt = con.prepareStatement(sql);
-                stmt.setInt(1, from);
-                stmt.setInt(2, amount);
-                ResultSet rs = stmt.executeQuery();
-                while (rs.next()) {
-                    int id = rs.getInt("id");
-                    String name = rs.getString("name");
-                    String description = rs.getString("description");
-                    String thumbnail = rs.getString("thumbnail");
-                    Double price = rs.getDouble("price");
-                    int quantity = rs.getInt("quantity");
-                    int view = rs.getInt("view");
-                    int categoryId = rs.getInt("category_id");
-                    Timestamp created_at = rs.getTimestamp("created_at");
-                    prodList.add(new Product(id, name, description, thumbnail, price, quantity, categoryId, view, created_at));
-                }
-            } catch (SQLException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+    @Override
+    public List<Product> getProducts(int from, int amount) {
+        List<Product> prodList = new ArrayList<>();
+        String sql = "SELECT * FROM PRODUCTS LIMIT ?, ?";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setInt(1, from);
+            stmt.setInt(2, amount);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String description = rs.getString("description");
+                String thumbnail = rs.getString("thumbnail");
+                Double price = rs.getDouble("price");
+                int quantity = rs.getInt("quantity");
+                int view = rs.getInt("view");
+                int categoryId = rs.getInt("category_id");
+                Timestamp created_at = rs.getTimestamp("created_at");
+                prodList.add(new Product(id, name, description, thumbnail, price, quantity, categoryId, view, created_at));
             }
-            return prodList;
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
+        return prodList;
+    }
 
     @Override
     public List<Product> findAllWithCategory() {
@@ -342,8 +356,5 @@ public class ProductImpl implements ProductDao {
         }
         return productList;
     }
-
-    
-
 
 }

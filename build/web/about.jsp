@@ -66,28 +66,29 @@
    
 <!-- About -->
 <div class="content-About">
-                      <h3>Giới Thiệu Về Cửa Hàng Hoa-Sports</h3>
-                      <img src="./assets/img/banner2.jpg" alt="Cửa hàng Hoa-Sports" class="store-image">
-                      
-                      <p>- Chào mừng bạn đến với Hoa-Sports, nơi mang đến cho bạn không chỉ sản phẩm thể thao chất lượng mà còn là trải nghiệm mua sắm tuyệt vời. Tọa lạc tại trung tâm thành phố, cửa hàng của chúng tôi cung cấp một loạt các sản phẩm thể thao từ giày dép, quần áo, dụng cụ tập luyện đến phụ kiện thể thao. Chúng tôi tự hào là địa chỉ tin cậy cho những người đam mê thể thao và chăm sóc sức khỏe.</p>
-                      
-                      <p>- Tại Hoa-Sports, chúng tôi hiểu rằng thể thao không chỉ là một hoạt động, mà còn là một phong cách sống. Với mục tiêu phục vụ nhu cầu của mọi đối tượng từ người mới bắt đầu cho đến các vận động viên chuyên nghiệp, chúng tôi cung cấp các sản phẩm đa dạng với mức giá hợp lý. Đội ngũ nhân viên của chúng tôi không chỉ có kinh nghiệm mà còn đam mê thể thao, luôn sẵn sàng tư vấn và giúp bạn chọn lựa sản phẩm phù hợp nhất.</p>
-                      
-                      <h2>Sản Phẩm Đa Dạng</h2>
-                      <p>- Chúng tôi cung cấp các sản phẩm của những thương hiệu hàng đầu trên thế giới, đảm bảo rằng mọi sản phẩm đều đạt tiêu chuẩn chất lượng cao nhất. Từ giày chạy bộ đến quần áo tập gym, từ bóng đá đến bơi lội, chúng tôi có tất cả những gì bạn cần để nâng cao hiệu suất thể thao của mình. Các sản phẩm của chúng tôi đều được lựa chọn kỹ lưỡng, đáp ứng nhu cầu về chất lượng, tính năng và thời trang.</p>
-              
-                      <p>- Bên cạnh đó, chúng tôi cũng cung cấp các sản phẩm chăm sóc sức khỏe, từ máy chạy bộ đến các thiết bị tập thể dục tại nhà. Hoa-Sports cam kết mang đến cho bạn sự lựa chọn hoàn hảo để giúp bạn duy trì sức khỏe và thể lực tốt nhất. Đừng ngần ngại đến cửa hàng để trải nghiệm và chọn cho mình những sản phẩm ưng ý!</p>
-                      
-                      <h2> Dịch Vụ Khách Hàng Tuyệt Vời</h2>
-                      <p>- Chúng tôi cam kết mang đến dịch vụ khách hàng tốt nhất. Đội ngũ nhân viên của chúng tôi không chỉ am hiểu về sản phẩm mà còn luôn sẵn sàng hỗ trợ bạn trong mọi thắc mắc. Với chính sách đổi trả linh hoạt và dịch vụ giao hàng nhanh chóng, bạn hoàn toàn có thể yên tâm khi mua sắm tại Hoa-Sports.</p>
-              
-                      <p>- Chúng tôi cũng thường xuyên tổ chức các sự kiện thể thao và chương trình khuyến mãi hấp dẫn, nhằm tạo ra một không khí thể thao sôi động và gắn kết cộng đồng. Đến với Hoa-Sports, bạn không chỉ đơn thuần là mua sắm, mà còn có cơ hội tham gia vào các hoạt động thú vị và gặp gỡ những người có cùng đam mê.</p>
-                      
-                      <h2>Tầm Nhìn Và Sứ Mệnh</h2>
-                      <p>- Hoa-Sports không chỉ là một cửa hàng bán lẻ, mà còn là một cộng đồng của những người yêu thể thao. Chúng tôi tin rằng thể thao là phương tiện tuyệt vời để kết nối mọi người và nâng cao sức khỏe. Sứ mệnh của chúng tôi là khuyến khích mọi người tham gia vào các hoạt động thể chất, từ đó cải thiện sức khỏe và tinh thần.</p>
-              
-                      <p>- Chúng tôi luôn nỗ lực để tạo ra một môi trường thân thiện và hỗ trợ, nơi mọi người đều có thể tìm thấy niềm vui và sự động viên trong việc luyện tập thể dục thể thao. Hãy đến với Hoa-Sports để trải nghiệm những sản phẩm và dịch vụ tuyệt vời mà chúng tôi mang lại. Chúng tôi luôn chào đón bạn!</p>
-                  </div>
+    <h3>Introduction to Hoa-Sports Store</h3>
+    <img src="./assets/img/banner2.jpg" alt="Hoa-Sports Store" class="store-image">
+    
+    <p>- Welcome to Hoa-Sports, where we offer not only high-quality sports products but also a wonderful shopping experience. Located in the city center, our store provides a wide range of sports products from shoes, clothing, workout equipment to sports accessories. We pride ourselves on being a trusted address for sports enthusiasts and health care.</p>
+    
+    <p>- At Hoa-Sports, we understand that sports are not just an activity but also a lifestyle. With the goal of serving the needs of everyone from beginners to professional athletes, we offer a diverse range of products at reasonable prices. Our staff is not only experienced but also passionate about sports, always ready to advise and help you choose the most suitable products.</p>
+    
+    <h2>Diverse Products</h2>
+    <p>- We provide products from top brands worldwide, ensuring that every product meets the highest quality standards. From running shoes to gym clothing, from soccer to swimming, we have everything you need to enhance your sports performance. Our products are carefully selected to meet the needs of quality, functionality, and fashion.</p>
+    
+    <p>- In addition, we also offer health care products, from treadmills to home exercise equipment. Hoa-Sports is committed to providing you with the perfect choices to help you maintain your health and fitness. Don't hesitate to visit our store to experience and choose the products you like!</p>
+    
+    <h2>Excellent Customer Service</h2>
+    <p>- We are committed to providing the best customer service. Our staff not only understands the products but is also always ready to assist you with any questions. With a flexible return policy and fast delivery service, you can shop at Hoa-Sports with complete peace of mind.</p>
+    
+    <p>- We also regularly organize sports events and attractive promotional programs to create a vibrant sports atmosphere and foster community connections. At Hoa-Sports, you will not only shop but also have the opportunity to participate in exciting activities and meet like-minded individuals.</p>
+    
+    <h2>Vision and Mission</h2>
+    <p>- Hoa-Sports is not just a retail store but also a community of sports lovers. We believe that sports are a wonderful means of connecting people and improving health. Our mission is to encourage everyone to participate in physical activities to improve health and well-being.</p>
+    
+    <p>- We always strive to create a friendly and supportive environment where everyone can find joy and encouragement in exercising. Come to Hoa-Sports to experience the excellent products and services we offer. We always welcome you!</p>
+</div>
+
 
     <!-- footer section starts -->
     <section class="footer">

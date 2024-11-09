@@ -70,50 +70,18 @@
         <!-- features section ends -->
 
         <!-- products section starts -->
-        <section class="products" id="products">
-
-            <h1 class="heading">Hot <span>products</span></h1>
-         
-            <div class="swiper product-slider">
-                <div class="swiper-wrapper">
-                    <c:forEach items="${productList}" var = "product">
-                        <div class="swiper-slide box">
-                            <img src="${product.thumbnail}" />
-                            <h3>${product.name}</h3>
-                            <div class="price">$${product.price}0</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-haft-alt"></i>
-                            </div>
-                            <a href="ProductServlet?productId=${product.id}" class="btn">add to cart</a>
-                        </div>
-                    </c:forEach>
-
-                </div>
-            </div>
-
-            <div class="swiper product-slider">
-                <div class="swiper-wrapper">
-                    <c:forEach items="${productList}" var = "product">
-                        <div class="swiper-slide box">
-                            <img src="${product.thumbnail}" />
-                            <h3>${product.name}</h3>
-                            <div class="price">$${product.price}0</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-haft-alt"></i>
-                            </div>
-                            <a href="./product.jsp" class="btn">add to cart</a>
-                        </div>
-                    </c:forEach>
-
-                </div>
+        <section class="categories" id="categories">
+            <h1 class="heading">Hot <span>Product</span></h1>
+            <div class="box-container">
+                <c:forEach items="${productList}" var ="product">
+                    <div class="box">
+                        <img src="${product.thumbnail}" />
+                        <h3>${product.name}</h3>
+                        <li>upto 45% off</li>
+                        <li>$${product.price}0</li>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </c:forEach>
             </div>
         </section>
         <!-- products section ends -->

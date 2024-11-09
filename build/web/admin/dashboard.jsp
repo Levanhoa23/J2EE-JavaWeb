@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,10 +28,10 @@
         <link href="./assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="./assets/admin/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/admin/csss/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="./assets/admin/css/style.css" rel="stylesheet">
+        <link href="./assets/admin/csss/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -296,13 +297,14 @@
             <script src="./assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
             <script src="./assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-            <!-- Template Javascript -->
-            <script src="./assets/admin/js/main.js"></script>
             <scrip>
-                var labels = [<c:forEach items="${dateList}" var ="date"> "${date}",</c:forEach>]
-                var data = [<c:forEach items="${orderByDataList}" var ="ord"> "${ord}",</c:forEach>]
+                var labels = [<c:forEach items="${dateList}" var ="date"> "${date}"</c:forEach>];
+                var data = [<c:forEach items="${orderByDateList}" var ="ord"> "${ord}"</c:forEach>];
 
             </scrip>
+            <!-- Template Javascript -->
+            <script src="./assets/admin/js/mainn.js"></script>
+
     </body>
 
 </html>

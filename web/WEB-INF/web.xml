@@ -116,6 +116,14 @@
         <servlet-name>IndexOrderItemSerlvet</servlet-name>
         <servlet-class>hoa.dev.admin.orderitem.IndexOrderItemSerlvet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DashBoardServlet_2</servlet-name>
+        <servlet-class>hoa.dev.admin.DashBoardServlet_2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IndexUserServlet_2</servlet-name>
+        <servlet-class>hoa.dev.admin.user_2.IndexUserServlet_2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/HomeServlet</url-pattern>
@@ -231,5 +239,13 @@
     <servlet-mapping>
         <servlet-name>IndexOrderItemSerlvet</servlet-name>
         <url-pattern>/IndexOrderItemSerlvet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DashBoardServlet_2</servlet-name>
+        <url-pattern>/DashBoardServlet_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndexUserServlet_2</servlet-name>
+        <url-pattern>/IndexUserServlet_2</url-pattern>
     </servlet-mapping>
 </web-app>

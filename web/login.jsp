@@ -33,7 +33,7 @@
                 <a href="#">Forgot password</a>
             </section>
         </div>
-        <div class="input-submit">
+        <div class="input-submit" >
             <!-- Use button inside the form -->
             <button type="submit" class="submit-btn">Login</button>
         </div>
